@@ -6,6 +6,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import util.CacheUtil;
+import util.DBUtil;
 
 public class NettyServer {
 	// 监听端口
@@ -21,7 +22,7 @@ public class NettyServer {
 	public static void main(String[] args) throws Exception  {
 		//初始化
 		CacheUtil.init();
-		
+		DBUtil.doInit();
 		
 		
 		try {

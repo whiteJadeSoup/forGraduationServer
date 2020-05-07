@@ -13,12 +13,7 @@
   </properties>
   
   <dependencies>
-	<dependency>
-    	<groupId>org.msgpack</groupId>
-    	<artifactId>msgpack-core</artifactId>
-    	<version>0.8.7</version>
-    	<scope>compile</scope>
-	</dependency>
+
 	
 	<dependency>
 		<groupId>com.hynnet</groupId>
@@ -60,6 +55,14 @@
         <systemPath>${project.basedir}/lib/netty-all-4.1.48.Final.jar</systemPath>
     </dependency>
     
+    
+    <dependency>
+    	<groupId>mysqljdbc</groupId>
+    	<artifactId>jdbc</artifactId>
+        <version>2.8</version>
+        <scope>system</scope>
+        <systemPath>${project.basedir}/lib/mysql-connector-java-8.0.20.jar</systemPath>
+    </dependency>
     
     
     <dependency>
